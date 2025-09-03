@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Classroom Seat Randomizer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="overlay" aria-hidden="true"></div>
+
+  <div id="app">
+    <h1 class="title">Classroom Seat Randomizer</h1>
+
+    <div class="controls">
+      <label for="shuffleCount">Shuffles:</label>
+      <input type="range" id="shuffleCount" min="1" max="5" value="3" />
+      <span id="shuffleValue">3</span>
+      <button id="shuffleBtn" aria-label="Shuffle seats">Shuffle</button>
+    </div>
+
+    <div id="countdown" aria-live="polite"></div>
+    <div id="grid" aria-label="Seating grid" role="grid"></div>
+  </div>
+
+  <audio id="bgm" src="audio/bgm.mp3" preload="auto" loop></audio>
+  <audio id="tada" src="audio/tada.mp3" preload="auto"></audio>
+
+  <a class="footer" href="https://github.com/kosemose" target="_blank" rel="noopener noreferrer">
+    Built by Sebastian, IB 2025 ✦
+  </a>
+
+  <script src="app.js"></script>
+</body>
+</html>
